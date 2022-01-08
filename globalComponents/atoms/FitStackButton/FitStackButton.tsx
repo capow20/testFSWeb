@@ -22,9 +22,8 @@ const ColorButton = withStyles((theme: any) => ({
 
 export default function FitStackButton(props: any) {
     return(
-        <div className={s.container} > 
-            
-{/*             <ColorButton
+        <div className={s.container} >          
+            <ColorButton
                 disabled={props.disabled}
                 onClick={props.onClick}
                 type={props.type}
@@ -33,8 +32,8 @@ export default function FitStackButton(props: any) {
             >
                 {props.title}
             </ColorButton>
- */}
-            <Button 
+
+{/*             <Button 
                 disabled={props.disabled}
                 onClick={props.onClick}
                 type={props.type}
@@ -42,7 +41,7 @@ export default function FitStackButton(props: any) {
                 className={s.colorButton}
             >
                 {props.title}
-            </Button>
+            </Button> */}
         </div>
     )
 }

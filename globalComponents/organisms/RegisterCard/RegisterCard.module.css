@@ -8,8 +8,8 @@
 
 .contentContainer {
     width: 25%;
-    background-color: rgba(254,99,71,1);
-    border-radius: 20;
+    background-color: var(--mainBackgroundColor);
+    border-radius: 20px;
     margin-bottom: 15%;
     display: flex;
     justify-content: flex-start;

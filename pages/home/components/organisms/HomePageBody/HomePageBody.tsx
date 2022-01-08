@@ -1,4 +1,4 @@
-import { EventRounded, FitnessCenter } from "@material-ui/icons";
+import { EventRounded, FitnessCenter } from "@mui/icons-material";
 import React from "react";
 import s from './HomePageBody.module.css'
 
@@ -9,7 +9,7 @@ const HomePageBody = (props: any) => {
       <div className={s.containerLeft}>
         <div className={s.itemContainerLeft}>
           <div className={s.iconContainerLeft}>
-            {/*<EventRounded className={s.icon} fontSize="large" />*/}
+            <EventRounded className={s.icon} fontSize="large" />
           </div>
           <div>
             <div className={s.programsHeaderText}> 
@@ -27,7 +27,7 @@ const HomePageBody = (props: any) => {
       <div className={s.containerRight}>
         <div className={s.itemContainerRight}>
           <div className={s.iconContainerRight}>
-            {/* <FitnessCenter className={s.icon} fontSize="large" /> */}
+             <FitnessCenter className={s.icon} fontSize="large" /> 
           </div>
 
           <div className={s.trainersHeaderText}>32+ Trainers</div>

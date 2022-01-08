@@ -1,5 +1,5 @@
 import { Button, createStyles} from '@mui/material';
-import { withStyles } from '@material-ui/core';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import CloseIcon from '@material-ui/icons/Close';
 import React from 'react';
 import { Colors } from '../../../constants/Colors';
@@ -9,7 +9,7 @@ import { maxWidth } from '@mui/system';
 
 
 export default function FitStackCloseButton (props: any) {
-
+    const styles = makeUseStyles();
     const ColorButton = withStyles(() => 
         createStyles({
             root: {
@@ -22,21 +22,22 @@ export default function FitStackCloseButton (props: any) {
         })
 )(Button);
 
-
-    const NewColorButton = styled(Button)(() => ({
-        maxWidth: '1em',
-        width: '1em',
-        "&:hover": {
-            backgroundColor: Colors.mainBackgroundColor,
-        },
-    }))
-
     return(
         <div>
-            <Button className={s.colorButton} onClick={props.onClick}>
+            {/* <Button className={s.colorButton} onClick={props.onClick}>
                 <CloseIcon className={s.text} />
-            </Button>
+            </Button> */}
+            <ColorButton>
+                <CloseIcon className={styles.text} />
+            </ColorButton>
         </div>
     )
-
 }
+
+const makeUseStyles = makeStyles({
+
+    text: {
+        color: Colors.mainButtonColor,
+        fontSize: '3em',
+    }
+})

@@ -1,11 +1,9 @@
 import { Button } from '@mui/material';
-import { withStyles } from '@mui/styles';
+import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
-import {PlayCircleFilledRounded, ShopRounded } from '@material-ui/icons';
-import PersonIcon from '@material-ui/icons/Person';
-import AppleIcon from '@material-ui/icons/Apple'
 import { Colors } from '../../../constants/Colors';
 import s from './FitStackStoreButton.module.css'
+import { PlayCircleFilledRounded, ShopRounded, Person, Apple } from '@mui/icons-material';
 
 const ColorButton = withStyles((theme: any) => ({
     root: {
@@ -29,14 +27,14 @@ const FitStackStoreButton = (props: any) => {
     return(
         <div className={s.container} > 
             
-{/*             <ColorButton
+            <ColorButton
                 onClick={props.onClick}
                 type={props.type}
                 variant="contained"
                 className={s.margin}
             >
                 {props.apple && 
-                <AppleIcon className={s.storeIcons} />
+                <Apple className={s.storeIcons} />
                 }
                 {props.google &&
                 <ShopRounded className={s.storeIcons} />
@@ -45,18 +43,18 @@ const FitStackStoreButton = (props: any) => {
                 <PlayCircleFilledRounded className={s.demoIcon} />
                 }
                 {props.signIn &&
-                <PersonIcon className={s.personIcon} />
+                <Person className={s.personIcon} />
                 }
                 {props.title}
-            </ColorButton> */}
+            </ColorButton>
 
-            <Button
+{/*            <Button
                 onClick={props.onClick}
                 type={props.type}
                 variant="contained"
                 className={s.colorButton}
             >
-                {/* {props.apple && 
+                 {props.apple && 
                 <AppleIcon className={s.storeIcons} />
                 }
                 {props.google &&
@@ -67,9 +65,9 @@ const FitStackStoreButton = (props: any) => {
                 }
                 {props.signIn &&
                 <PersonIcon className={s.personIcon} />
-                } */}
+                } 
                 {props.title}
-            </Button>
+            </Button>  */}
         </div>
     )
 }
